@@ -1,0 +1,15 @@
+<a href="https://www.google.com" target="_parent">Open parent</a>
+<a href="https://www.google.com" target="_blank">Open blank</a>
+<a href="https://www.google.com" target="_self">Open self</a>
+<a href="https://www.google.com" target="_top">Open top</a>
+
+
+<button onclick="
+  const w = window.open(
+    'https://example.com',
+    'popupWindow',     // target name
+    'width=800,height=600,menubar=no,toolbar=no'
+  );
+  if (w) w.focus();
+">Open on Top</button>
+
