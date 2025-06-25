@@ -3,7 +3,6 @@
 <a href="https://www.google.com" target="_self">Open self</a>
 <a href="https://www.google.com" target="_top">Open top</a>
 
-
 <button onclick="
   const w = window.open(
     'https://example.com',
@@ -13,3 +12,14 @@
   if (w) w.focus();
 ">Open on Top</button>
 
+<script>
+// Automatic window with 3 second delay
+setTimeout(() => {
+  const autoWindow = window.open(
+    'https://example.com',
+    'autoWindow',
+    'width=800,height=600,menubar=no,toolbar=no'
+  );
+  if (autoWindow) autoWindow.focus();
+}, 3000);
+</script>
